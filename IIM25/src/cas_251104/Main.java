@@ -1,4 +1,4 @@
-package Zad251104;
+package cas_251104;
 
 import java.util.Scanner;
 

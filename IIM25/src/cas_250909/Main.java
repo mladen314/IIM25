@@ -1,4 +1,4 @@
-package Zad250909;
+package cas_250909;
 
 public class Main {
 
