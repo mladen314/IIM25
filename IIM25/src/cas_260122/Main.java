@@ -12,8 +12,14 @@ public class Main {
 		int a = input.nextInt();
 		int b = input.nextInt();
 		
-		int s = suma(a, b);	
-		System.out.println("Suma brojeva je: " + s);
+		if(sumaJeProstBr(a, b)) {
+			System.out.println("Suma brojeva "+a+" i "+b+" JESTE prost broj");
+		}
+		else {
+			System.out.println("Suma brojeva "+a+" i "+b+" NIJE prost broj");
+		}
+		
+		
 	}
 	
 	/* 
@@ -23,4 +29,33 @@ public class Main {
 		int s = n+m;
 		return s;
 	}
+	
+	/*
+	 * Provjerava da li je broj prost
+	 */
+	public static boolean jeProstBroj(int n) {
+		
+		for(int i=2; i<=Math.sqrt(n); i++) {
+			if(n%i==0) {
+				return false;
+			}
+		}
+		return true;
+		
+	}
+	
+	/*
+	 * Provjerava da li je suma cifara prost broj
+	 */
+	public static boolean sumaJeProstBr(int a, int b) {
+		
+		int s = suma(a, b);
+		boolean jeste = jeProstBroj(s);
+		return jeste;
+		
+		//return jeProstBroj(suma(a, b));
+		
+	}
+	
+	
 }
