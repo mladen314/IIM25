@@ -27,6 +27,9 @@ public class Main {
 		System.out.println("Aleksa".compareTo("Ana")<0);
 		System.out.println(s.substring(3));
 		System.out.println(s.substring(3, 6));
+		s = s.replace("o", "AL");
+		System.out.println(s);
+		System.out.println(s.contains("o"));
 		//System.out.println(gim);
 		
 
