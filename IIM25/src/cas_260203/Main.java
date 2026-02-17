@@ -11,6 +11,7 @@ public class Main {
 		char x = 'a';
 		String s = "Algoritmi", s1= "algoritmi", s2;
 		String gim = "Gimnazija\n \"Slobodan Skerovic\"";
+		//System.out.println(gim);
 		
 		System.out.println("Unijeti dvije linije teksta");
 		//s = input.nextLine(); // unosti citav red, do entera
@@ -30,7 +31,7 @@ public class Main {
 		s = s.replace("o", "AL");
 		System.out.println(s);
 		System.out.println(s.contains("o"));
-		//System.out.println(gim);
+		
 		
 
 	}
