@@ -31,7 +31,7 @@ public class Main {
 	
 	
 	/*
-	 * Napisati funkciju koja prebrojava samoglasnike (a, e, o, i, u)
+	 * Napisati funkciju koja vraca broj samoglasnika (a, e, o, i, u)
 	 */
 	
 	public static int br_samoglasnika(String s) {
@@ -46,7 +46,6 @@ public class Main {
 		return br;
 	}
 	
-	
 	/*
 	 * Napisati funkciju koja provjerava da li je sifra jaka. 
 	 * Sifra se smatra jakom ako sadrzi barem 8 karaktera
@@ -54,5 +53,7 @@ public class Main {
 	 * ($, %, !, _) i barem 4 slova engleskog alfabeta od kojih je 
 	 * barem jedno veliko
 	 */
+	
+	
 
 }
