@@ -11,12 +11,14 @@ public class Main {
 		int [] niz;
 		System.out.println("Unijeti duzinu niza: ");
 		int n = input.nextInt();
-		niz = kreirajNiz(n);
-		
-		stamoajNiz(niz);
+		//niz = kreirajNiz(n);
+		niz = new int[n];
+		popuniNiz(niz);
+		stampajNiz(niz);
 		
 		//System.out.println(slucajanBr(100, 900));
 		
+		input.close();
 		
 	}
 	//Math.random() - slucajan broj iz intervala od 0 do 1
@@ -31,7 +33,7 @@ public class Main {
 		return (int)(Math.random()*(n-m))+m;
 	}
 	
-	public static void stamoajNiz(int [] niz) {
+	public static void stampajNiz(int [] niz) {
 		for (int element : niz) {
 			System.out.print(element + " ");
 			element = slucajanBr(10, 20);
@@ -39,7 +41,7 @@ public class Main {
 		System.out.println();
 	}
 	
-	public static int [] kreirajNiz(int n) {
+	public static int[] kreirajNiz(int n) {
 		int [] niz = new int[n];
 		
 		for (int i = 0; i < niz.length; i++) {
@@ -47,5 +49,23 @@ public class Main {
 		}
 		return niz;
 	}
+	
+	public static void popuniNiz(int[] niz) {
+		for (int i = 0; i < niz.length; i++) {
+			niz[i] = slucajanBr(10, 100);
+		}
+	}
+	
+	/*
+	 * Napisati funkciju koja provjerava
+	 * da li se zadati element alazi u nizu
+	 */
+	
+	
+	/*
+	 * Napisati funkciju koja varaca najveci
+	 * element niza
+	 */
+	
 
 }
